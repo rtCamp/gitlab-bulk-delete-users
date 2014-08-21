@@ -18,7 +18,7 @@ Open file in editor
 vim bulk_delete.rake
 ```
 
-Change domain from `example.com` to `yourdoamin.com`.
+Change domain from `example.com` to `yourdoamin.com`
 
 
 ## Rub Task
