@@ -11,6 +11,9 @@ namespace :gitlab do
         ## comment out following line
         abort("Comment out line #12 in file lib/tasks/bulk_delete.rake to proceed")
 
+        ## UNCOMMENT following delete all users who never signed in
+        ## users = User.where('email NOT LIKE ? AND sign_in_count = 0 ', '%' + domain).destroy_all
+
 		## get all users whose email address doesn't have above domain and they are not admin
 	    users = User.where('email NOT LIKE ? AND admin = false ', '%' + domain)
 
